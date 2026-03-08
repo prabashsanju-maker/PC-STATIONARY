@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | PC STATIONERY</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#f9f9f9]">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full top-0 z-50 transition-all duration-300 px-6 py-4 glass-nav border-gray-200">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group overflow-hidden">
+                <span class="text-3xl font-bold brand-font text-primary tracking-tighter">PC <span class="text-accent underline decoration-2 underline-offset-4">STATIONERY</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="index.html" class="hover:text-accent transition-colors">Home</a>
+                <a href="products.html" class="text-accent border-b-2 border-accent transition-colors">Collections</a>
+                <a href="about.html" class="hover:text-accent transition-colors">Legacy</a>
+                <a href="contact.html" class="hover:text-accent transition-colors">Connect</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-primary">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header / Banner -->
+    <header class="pt-40 pb-20 px-6 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end">
+            <div class="max-w-2xl animate-on-scroll">
+                <h4 class="text-accent font-bold uppercase tracking-widest text-xs mb-4">The Curated List</h4>
+                <h1 class="text-5xl md:text-7xl mb-8">Elevate Your Desk.</h1>
+                <p class="text-gray-500 leading-relaxed text-lg">Browse our exclusive collection of writing instruments, paper goods, and workspace tools. Every item is selected for its quality and aesthetic value.</p>
+            </div>
+            <div class="mt-12 md:mt-0 flex space-x-4 animate-on-scroll" style="animation-delay: 0.2s">
+                <div class="bg-gray-100 px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest border border-gray-200">248 Items Found</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Grid & Filters -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <!-- Simple Filter Tabs -->
+            <div class="flex flex-wrap items-center justify-center space-x-4 mb-20 animate-on-scroll">
+                <button class="px-8 py-4 rounded-full bg-accent text-white text-xs font-bold uppercase tracking-widest hover-lift">All items</button>
+                <button class="px-8 py-4 rounded-full bg-white text-gray-500 border border-gray-100 text-xs font-bold uppercase tracking-widest hover:border-accent hover:text-accent transition-all hover-lift">Fine Pens</button>
+                <button class="px-8 py-4 rounded-full bg-white text-gray-500 border border-gray-100 text-xs font-bold uppercase tracking-widest hover:border-accent hover:text-accent transition-all hover-lift">Journals</button>
+                <button class="px-8 py-4 rounded-full bg-white text-gray-500 border border-gray-100 text-xs font-bold uppercase tracking-widest hover:border-accent hover:text-accent transition-all hover-lift">Premium Desk</button>
+                <button class="px-8 py-4 rounded-full bg-white text-gray-500 border border-gray-100 text-xs font-bold uppercase tracking-widest hover:border-accent hover:text-accent transition-all hover-lift">Luxury Kits</button>
+            </div>
+
+            <!-- Products -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+                <!-- Product 1 -->
+                <div class="group animate-on-scroll">
+                    <div class="relative overflow-hidden rounded-3xl bg-white aspect-[4/5] mb-8 hover-lift luxury-shadow">
+                        <img src="assets/images/pens.png" alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute top-6 left-6 flex space-x-2">
+                            <span class="px-4 py-2 bg-accent text-white text-[10px] font-bold uppercase tracking-widest rounded-full">New Arrival</span>
+                        </div>
+                        <button class="absolute bottom-8 right-8 w-14 h-14 bg-white hover:bg-black hover:text-white transition-all duration-300 rounded-full flex items-center justify-center text-xl shadow-xl">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start px-2">
+                        <div>
+                            <h3 class="text-2xl mb-2 group-hover:text-accent transition-colors">Executive Gold Pen</h3>
+                            <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">Writing Instruments</p>
+                        </div>
+                        <p class="text-2xl font-bold font-sans">Rs. 4,500</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group animate-on-scroll" style="animation-delay: 0.1s">
+                    <div class="relative overflow-hidden rounded-3xl bg-white aspect-[4/5] mb-8 hover-lift luxury-shadow">
+                        <img src="assets/images/notebooks.png" alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                         <div class="absolute top-6 left-6 flex space-x-2">
+                            <span class="px-4 py-2 bg-black text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Limited</span>
+                        </div>
+                        <button class="absolute bottom-8 right-8 w-14 h-14 bg-white hover:bg-black hover:text-white transition-all duration-300 rounded-full flex items-center justify-center text-xl shadow-xl">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start px-2">
+                        <div>
+                            <h3 class="text-2xl mb-2 group-hover:text-accent transition-colors">Linen Bound Journal</h3>
+                            <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">Paper Goods</p>
+                        </div>
+                        <p class="text-2xl font-bold font-sans">Rs. 2,250</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="relative overflow-hidden rounded-3xl bg-white aspect-[4/5] mb-8 hover-lift luxury-shadow">
+                        <img src="assets/images/accessories.png" alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <button class="absolute bottom-8 right-8 w-14 h-14 bg-white hover:bg-black hover:text-white transition-all duration-300 rounded-full flex items-center justify-center text-xl shadow-xl">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start px-2">
+                        <div>
+                            <h3 class="text-2xl mb-2 group-hover:text-accent transition-colors">Brass Desk Organizer</h3>
+                            <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">Workspace</p>
+                        </div>
+                        <p class="text-2xl font-bold font-sans">Rs. 3,800</p>
+                    </div>
+                </div>
+
+                 <!-- Product 4 -->
+                 <div class="group animate-on-scroll" style="animation-delay: 0.3s">
+                    <div class="relative overflow-hidden rounded-3xl bg-white aspect-[4/5] mb-8 hover-lift luxury-shadow">
+                        <img src="assets/images/hero.png" alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                         <div class="absolute top-6 left-6 flex space-x-2">
+                            <span class="px-4 py-2 bg-accent text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Best Seller</span>
+                        </div>
+                        <button class="absolute bottom-8 right-8 w-14 h-14 bg-white hover:bg-black hover:text-white transition-all duration-300 rounded-full flex items-center justify-center text-xl shadow-xl">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start px-2">
+                        <div>
+                            <h3 class="text-2xl mb-2 group-hover:text-accent transition-colors">Legacy Writing Set</h3>
+                            <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">Gift Collections</p>
+                        </div>
+                        <p class="text-2xl font-bold font-sans">Rs. 12,000</p>
+                    </div>
+                </div>
+
+                <!-- Product 5 (Repeated images with different info for demo) -->
+                <div class="group animate-on-scroll" style="animation-delay: 0.4s">
+                    <div class="relative overflow-hidden rounded-3xl bg-white aspect-[4/5] mb-8 hover-lift luxury-shadow">
+                        <img src="assets/images/pens.png" alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale hover:grayscale-0">
+                        <button class="absolute bottom-8 right-8 w-14 h-14 bg-white hover:bg-black hover:text-white transition-all duration-300 rounded-full flex items-center justify-center text-xl shadow-xl">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start px-2">
+                        <div>
+                            <h3 class="text-2xl mb-2 group-hover:text-accent transition-colors">Vintage Inkwell Set</h3>
+                            <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">Professional Tools</p>
+                        </div>
+                        <p class="text-2xl font-bold font-sans">Rs. 5,900</p>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="group animate-on-scroll" style="animation-delay: 0.5s">
+                    <div class="relative overflow-hidden rounded-3xl bg-white aspect-[4/5] mb-8 hover-lift luxury-shadow">
+                        <img src="assets/images/notebooks.png" alt="Product" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <button class="absolute bottom-8 right-8 w-14 h-14 bg-white hover:bg-black hover:text-white transition-all duration-300 rounded-full flex items-center justify-center text-xl shadow-xl">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="flex justify-between items-start px-2">
+                        <div>
+                            <h3 class="text-2xl mb-2 group-hover:text-accent transition-colors">Minimalist Planner</h3>
+                            <p class="text-xs text-gray-400 uppercase tracking-widest font-bold">Paper Goods</p>
+                        </div>
+                        <p class="text-2xl font-bold font-sans">Rs. 1,850</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Items Button -->
+            <div class="text-center mt-24">
+                <button class="btn-premium px-16 py-6 rounded-full text-xs font-bold uppercase tracking-[0.3em] hover:px-20 transition-all">Load More Masterpieces</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer class="bg-white border-t border-gray-100 pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest font-bold text-gray-400">
+             <a href="index.html" class="text-2xl font-bold brand-font mb-4 md:mb-0 text-primary">PC <span class="text-accent">STATIONERY</span></a>
+             <p>&copy; 2026 PC Stationery. All Rights Reserved.</p>
+             <div class="flex space-x-6 mt-4 md:mt-0">
+                 <a href="#" class="hover:text-accent">Instagram</a>
+                 <a href="#" class="hover:text-accent">Facebook</a>
+                 <a href="#" class="hover:text-accent">Twitter</a>
+             </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
